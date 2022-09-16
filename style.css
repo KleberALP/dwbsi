@@ -1,0 +1,35 @@
+h1 {
+    text-decoration: none;
+    color: blue;
+}
+
+h2 {
+    text-decoration: dashed;
+    color: red;
+}
+
+h3 {
+    text-decoration: line-through;
+    color: pink;
+}
+
+h4 {
+    text-decoration: none;
+    color: orange;
+}
+
+#tabela{
+    width: 100%;
+}
+
+#alinhar-centro{
+    text-align: center;
+}
+
+#alinhar-esquerda{
+    text-align: left;
+}
+
+#alinhar-direita{
+    text-align: right;
+}
