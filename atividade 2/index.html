@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BootStrap</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div>
+        <h1>Alerts</h1>
+        <div class="alert alert-danger">
+            <strong>Atenção!</strong> Cuidado com a mensagem de alerta!
+        </div>
+    </div>
+
+    <div>
+        <p> Barra de progresso</p>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100" style="width: 28%"></div>
+        </div>
+
+        <p> Barra de progresso manipulada por js</p>
+        <div class="barra">
+            <div></div>
+        </div>
+        <p>Digite o valor:<input type="number" onkeyup="alterarProgresso()" /></p>
+        <script>
+            const progresso = document.querySelector(".barra div")
+            const input = document.querySelector("input")
+
+            const alterarProgresso = () => {
+                progresso.setAttribute("style", "width: " + input.value + "%")
+            }
+        </script>
+    </div>
+
+
+    <h1>Listas</h1>
+    <div>
+
+        <ol>
+            <li>Faculdade</li>
+            <li>Trabalho</li>
+            <li>Almoço</li>
+            <li>Trabalho</li>
+            <li>Dormir</li>
+        </ol>
+
+        <ul>
+            <li>Faculdade</li>
+            <li>Trabalho</li>
+            <li>Almoço</li>
+            <li>Trabalho</li>
+            <li>Dormir</li>
+        </ul>
+
+        <ol type="I">
+            <li>Faculdade</li>
+            <li>Trabalho</li>
+            <li>Almoço</li>
+            <li>Trabalho</li>
+            <li>Dormir</li>
+        </ol>
+
+        <div id="dd">
+            <dl>
+                <dt>Programação Basica</dt>
+                <dd> Programação 1</dd>
+                <dd> Programação 2</dd>
+                <dt> PHP</dt>
+                <dd> Programação Avançada</dd>
+                <dd> Programação Orientada a Objeto</dd>
+                <dd> Técnica de Programação Avançada</dd>
+        </div>
+
+
+    </div>
+
+    <h1>Tabelas</h1>
+    <div>
+        <table id="tabela" class="table table-bordered">
+            <tr id="alinhar-esquerda">
+                <td>Nome</td>
+                <td>Idade</td>
+                <td>Profissão</td>
+            </tr>
+            <tr>
+                <td>Kleber André</td>
+                <td>25</td>
+                <td>Desenvolvedor</td>
+            </tr>
+            <tr id="alinhar-centro">
+                <td>Natalia Dumer</td>
+                <td>24</td>
+                <td>Tecnica de enfermagem</td>
+            </tr>
+            <tr id="alinhar-direita">
+                <td>Clara Dumer</td>
+                <td>3</td>
+                <td>Estudante</td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div>
+        <h1>Imagens</h1>
+        <img src="https://api.lorem.space/image/movie?w=150&amp;amp;amp;amp;h=220">
+        <p>
+            <input type="button" value="Atualizar imagem" onClick="window.location.reload()">
+        <p>
+    </div>
+
+
+
+
+</body>
+
+</html>
