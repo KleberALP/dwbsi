@@ -1,0 +1,34 @@
+{
+  "name": "aulasdw",
+  "version": "1.0.0",
+  "description": "Projeto de Desenvolvimento Web",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KleberALP/dwbsi.git"
+  },
+  "keywords": [
+    "web",
+    "development"
+  ],
+  "author": "Kleber Picoli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KleberALP/dwbsi/issues"
+  },
+  "homepage": "https://github.com/KleberALP/dwbsi#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.2",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
