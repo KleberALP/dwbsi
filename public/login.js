@@ -45,7 +45,7 @@ function displayFormCadastro(evento) {
 }
 
 const sendCadastro = (payload) => {
-    fetch('login', {
+    fetch('signin', {
         method: 'PUT',
         body: payload,
     })
@@ -77,7 +77,7 @@ const sendLogin = (payload) => {
 }
 
 const displayLinkLogout = (username) => {
-    sectionlogin.innerHTML = `${username} <a href="#">logout</a>`
+    sectionlogin.innerHTML = `<span>${username}</span> <a href="#">logout</a>`
     const linklogout = sectionlogin.querySelector('a')
     linklogout.addEventListener('click', function (evento) {
         evento.preventDefault()
